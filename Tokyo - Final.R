@@ -1,7 +1,7 @@
 
 #Individual Entrants - 2021 Tokyo Games
 {
-  entrants2020 = read.csv("/Users/connorbradley/Desktop/swim/entrants2020.csv")
+  entrants2020 = read.csv("/entrants2020.csv")
   
   entrants2020 = entrants2020 %>%
     mutate(group = cumsum(Country == "VIEW PROFILE")) %>%
