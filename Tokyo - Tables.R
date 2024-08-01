@@ -73,7 +73,7 @@ library(gt)
       locations = list(
         cells_column_labels(c(2:5)))) %>%
     tab_options(data_row.padding = px(12)) %>%
-    gtsave("/Users/connorbradley/Desktop/swim/besttimes_usa_20.png", zoom = 6, expand = c(50,20,50,20))
+    gtsave("/besttimes_usa_20.png", zoom = 6, expand = c(50,20,50,20))
 }
 
 #TABLE PREP -  2021 Tokyo Games TOP RELAYS (2021 Swims)
@@ -254,7 +254,7 @@ library(gt)
       columns = everything(),
       rows = c(2,3,4,7),
       fill = "#e0f0e0") %>% 
-    gtsave("/Users/connorbradley/Desktop/swim/top_relays_20.png", zoom = 6, expand = c(50,50,50,50))
+    gtsave("/top_relays_20.png", zoom = 6, expand = c(50,50,50,50))
   
 }
 
@@ -471,6 +471,6 @@ library(gt)
     tab_style(
       style = cell_text(size = px(12)),
       locations = cells_source_notes()) %>% 
-    gtsave("/Users/connorbradley/Desktop/swim/bestrelays_usa_20.png", zoom = 6, expand = c(50,50,50,50),vwidth = 2000)
+    gtsave("/bestrelays_usa_20.png", zoom = 6, expand = c(50,50,50,50),vwidth = 2000)
   
 }
