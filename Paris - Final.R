@@ -9,13 +9,13 @@ library(gt)
 
 #Individual Entries - 2024 Paris Games
 {
-  entries = read.csv("/Users/connorbradley/Desktop/swim/olympics2024entries.csv")
+  entries = read.csv("olympics2024entries.csv")
   entries$concat = paste0(entries$last,", ",entries$first," ",entries$ro, " ",entries$sex)
 }
 
 #Individual Entrants - 2024 Paris Games
 {
-  entrants = read.csv("/Users/connorbradley/Desktop/swim/entrants.csv")
+  entrants = read.csv("entrants.csv")
   
   entrants = entrants %>%
     mutate(group = cumsum(Country == "VIEW PROFILE")) %>%
